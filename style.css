@@ -1,0 +1,178 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fdfdfd;
+  color: #333;
+  line-height: 1.7;
+}
+
+/* Hero Header */
+.hero {
+  height: 100vh;
+  background: url('khushboo.jpg') no-repeat center center/cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  border-radius: 15px;
+  color: #fff;
+}
+
+.overlay h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.overlay p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+/* Learn More Button */
+.learn-more {
+  display: inline-flex;
+  align-items: center;
+  background: #00bcd4;
+  color: white;
+  padding: 0.8rem 1.2rem;
+  border-radius: 40px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.learn-more:hover {
+  background: #0097a7;
+}
+
+.circle {
+  background: white;
+  color: #00bcd4;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Sections */
+main {
+  padding: 3rem 1rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #0f172a;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #00bcd4;
+  display: inline-block;
+}
+
+/* Skills */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 1rem;
+}
+
+.skill {
+  background: #e0f7fa;
+  color: #00796b;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* Projects */
+.projects-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin-top: 1rem;
+}
+
+.project-card {
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+  color: #00796b;
+  margin-bottom: 0.5rem;
+}
+
+.project-card a {
+  text-decoration: none;
+  color: #0288d1;
+  font-weight: bold;
+}
+
+.project-card a:hover {
+  text-decoration: underline;
+}
+
+/* Contact */
+#contact a {
+  color: #0288d1;
+  font-weight: 500;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: #0f172a;
+  color: #fff;
+  margin-top: 3rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .overlay h1 {
+    font-size: 2rem;
+  }
+
+  .learn-more {
+    padding: 0.6rem 1rem;
+  }
+
+  .circle {
+    width: 25px;
+    height: 25px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
